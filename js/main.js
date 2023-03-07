@@ -45,5 +45,14 @@ const ourTeam = [
 
 
 ];
-console.log(ourTeam);
 
+
+for (let myTeam of ourTeam){
+    for(let key in myTeam){
+
+        console.log(`${key}: ${myTeam[key]}`);
+    }
+    
+
+
+}
