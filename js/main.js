@@ -60,9 +60,9 @@ for (let myTeam of ourTeam) {
     const teamElement = document.createElement('div');
 
     teamElement.innerHTML = `
-<h3> name: ${myTeam.name}</h3>
-<div> role: ${myTeam.role}</div>
-<div> photo: ${myTeam.photo}</div>
+<h3>${myTeam.name}</h3>
+<div>${myTeam.role}</div>
+<div><img src="${myTeam.photo}"></div>
 
 `;
 
