@@ -1,5 +1,7 @@
 'use strict'
 
+
+
 const ourTeam = [
     {
         name: 'Wayne Barnett',
@@ -47,12 +49,24 @@ const ourTeam = [
 ];
 
 
-for (let myTeam of ourTeam){
-    for(let key in myTeam){
+const element = document.getElementById('container');
+
+for (let myTeam of ourTeam) {
+    for (let key in myTeam) {
 
         console.log(`${key}: ${myTeam[key]}`);
     }
-    
 
+    const teamElement = document.createElement('div');
+
+    teamElement.innerHTML = `
+<h3> name: ${myTeam.name}</h3>
+<div> role: ${myTeam.role}</div>
+<div> photo: ${myTeam.photo}</div>
+
+`;
+
+    element.append(teamElement);
 
 }
+
